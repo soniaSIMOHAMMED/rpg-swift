@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E39F46452876C33D001E84B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39F46442876C33D001E84B4 /* AppDelegate.swift */; };
-		E39F46472876C33D001E84B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39F46462876C33D001E84B4 /* SceneDelegate.swift */; };
-		E39F46492876C33D001E84B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39F46482876C33D001E84B4 /* ViewController.swift */; };
-		E39F464C2876C33D001E84B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39F464A2876C33D001E84B4 /* Main.storyboard */; };
 		E39F464E2876C343001E84B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39F464D2876C343001E84B4 /* Assets.xcassets */; };
 		E39F46512876C343001E84B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39F464F2876C343001E84B4 /* LaunchScreen.storyboard */; };
+		E39F465A2876C62C001E84B4 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39F46582876C62C001E84B4 /* FormViewController.swift */; };
+		E39F465B2876C62C001E84B4 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E39F46592876C62C001E84B4 /* FormViewController.xib */; };
+		E39F465E2876CB98001E84B4 /* SubscriberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39F465C2876CB98001E84B4 /* SubscriberViewController.swift */; };
+		E39F465F2876CB98001E84B4 /* SubscriberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E39F465D2876CB98001E84B4 /* SubscriberViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E39F46412876C33D001E84B4 /* mini-rpg-sonia-inas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mini-rpg-sonia-inas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39F46442876C33D001E84B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E39F46462876C33D001E84B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E39F46482876C33D001E84B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E39F464B2876C33D001E84B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E39F464D2876C343001E84B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E39F46502876C343001E84B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E39F46522876C343001E84B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39F46582876C62C001E84B4 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		E39F46592876C62C001E84B4 /* FormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
+		E39F465C2876CB98001E84B4 /* SubscriberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberViewController.swift; sourceTree = "<group>"; };
+		E39F465D2876CB98001E84B4 /* SubscriberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscriberViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				E39F46442876C33D001E84B4 /* AppDelegate.swift */,
-				E39F46462876C33D001E84B4 /* SceneDelegate.swift */,
-				E39F46482876C33D001E84B4 /* ViewController.swift */,
-				E39F464A2876C33D001E84B4 /* Main.storyboard */,
 				E39F464D2876C343001E84B4 /* Assets.xcassets */,
 				E39F464F2876C343001E84B4 /* LaunchScreen.storyboard */,
 				E39F46522876C343001E84B4 /* Info.plist */,
+				E39F46582876C62C001E84B4 /* FormViewController.swift */,
+				E39F46592876C62C001E84B4 /* FormViewController.xib */,
+				E39F465C2876CB98001E84B4 /* SubscriberViewController.swift */,
+				E39F465D2876CB98001E84B4 /* SubscriberViewController.xib */,
 			);
 			path = "mini-rpg-sonia-inas";
 			sourceTree = "<group>";
@@ -125,9 +128,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39F465F2876CB98001E84B4 /* SubscriberViewController.xib in Resources */,
 				E39F46512876C343001E84B4 /* LaunchScreen.storyboard in Resources */,
+				E39F465B2876C62C001E84B4 /* FormViewController.xib in Resources */,
 				E39F464E2876C343001E84B4 /* Assets.xcassets in Resources */,
-				E39F464C2876C33D001E84B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +142,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E39F46492876C33D001E84B4 /* ViewController.swift in Sources */,
+				E39F465E2876CB98001E84B4 /* SubscriberViewController.swift in Sources */,
+				E39F465A2876C62C001E84B4 /* FormViewController.swift in Sources */,
 				E39F46452876C33D001E84B4 /* AppDelegate.swift in Sources */,
-				E39F46472876C33D001E84B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E39F464A2876C33D001E84B4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E39F464B2876C33D001E84B4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E39F464F2876C343001E84B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +288,6 @@
 				INFOPLIST_FILE = "mini-rpg-sonia-inas/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +315,6 @@
 				INFOPLIST_FILE = "mini-rpg-sonia-inas/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

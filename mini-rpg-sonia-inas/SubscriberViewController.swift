@@ -30,43 +30,13 @@ class SubscriberViewController: UIViewController, UITextFieldDelegate {
          guard let nom = self.nomTextField.text,
                 let sexe = self.sexeTextField.text,
                 let taille = self.tailleTextField.text else {
-             self.displayErrorMessage(title: NSLocalizedString("form.title", comment: ""),  message: NSLocalizedString("form.message.required", comment: ""))
-            return
+
                 }
-         guard log.count > 4 else {
-             self.displayErrorMessage(title: NSLocalizedString("form.title", comment: ""), message: NSLocalizedString("form.login.len", comment: ""))
-             return
-             
-         }
-         guard pwd.count > 6 else {
-             self.displayErrorMessage(title: NSLocalizedString("form.title", comment: ""), message: NSLocalizedString("form.password.len", comment: ""))
-             return
-         }
+         
          
      }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == self.loginTextField {
-            self.passwordTextField.becomeFirstResponder() // permet de changer textField
-        }
-        
-        if textField == self.passwordTextField {
-            self.passwordTextField.resignFirstResponder() // permet de fermer le clavier
-        }
-        
-        return true
-    }
-     // MARK: - Navigation
-    
-    func displayErrorMessage(title: String, message: String){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Fermer", style: .cancel))
-        self.present(alert, animated: true){
-            Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false){
-                _ in alert.dismiss(animated: true)
-            }
-        }
-    }
+
 
 
 }

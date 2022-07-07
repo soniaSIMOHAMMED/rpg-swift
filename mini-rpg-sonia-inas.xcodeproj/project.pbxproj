@@ -10,10 +10,9 @@
 		E39F46452876C33D001E84B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39F46442876C33D001E84B4 /* AppDelegate.swift */; };
 		E39F464E2876C343001E84B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39F464D2876C343001E84B4 /* Assets.xcassets */; };
 		E39F46512876C343001E84B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39F464F2876C343001E84B4 /* LaunchScreen.storyboard */; };
-		E39F465A2876C62C001E84B4 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39F46582876C62C001E84B4 /* FormViewController.swift */; };
-		E39F465B2876C62C001E84B4 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E39F46592876C62C001E84B4 /* FormViewController.xib */; };
 		E39F465E2876CB98001E84B4 /* SubscriberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39F465C2876CB98001E84B4 /* SubscriberViewController.swift */; };
 		E39F465F2876CB98001E84B4 /* SubscriberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E39F465D2876CB98001E84B4 /* SubscriberViewController.xib */; };
+		E39F46622876D55F001E84B4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39F46612876D55F001E84B4 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +21,9 @@
 		E39F464D2876C343001E84B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E39F46502876C343001E84B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E39F46522876C343001E84B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E39F46582876C62C001E84B4 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
-		E39F46592876C62C001E84B4 /* FormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
 		E39F465C2876CB98001E84B4 /* SubscriberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberViewController.swift; sourceTree = "<group>"; };
 		E39F465D2876CB98001E84B4 /* SubscriberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscriberViewController.xib; sourceTree = "<group>"; };
+		E39F46612876D55F001E84B4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +56,23 @@
 		E39F46432876C33D001E84B4 /* mini-rpg-sonia-inas */ = {
 			isa = PBXGroup;
 			children = (
+				E39F46602876D550001E84B4 /* Model */,
 				E39F46442876C33D001E84B4 /* AppDelegate.swift */,
 				E39F464D2876C343001E84B4 /* Assets.xcassets */,
 				E39F464F2876C343001E84B4 /* LaunchScreen.storyboard */,
 				E39F46522876C343001E84B4 /* Info.plist */,
-				E39F46582876C62C001E84B4 /* FormViewController.swift */,
-				E39F46592876C62C001E84B4 /* FormViewController.xib */,
 				E39F465C2876CB98001E84B4 /* SubscriberViewController.swift */,
 				E39F465D2876CB98001E84B4 /* SubscriberViewController.xib */,
 			);
 			path = "mini-rpg-sonia-inas";
+			sourceTree = "<group>";
+		};
+		E39F46602876D550001E84B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E39F46612876D55F001E84B4 /* Player.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +135,6 @@
 			files = (
 				E39F465F2876CB98001E84B4 /* SubscriberViewController.xib in Resources */,
 				E39F46512876C343001E84B4 /* LaunchScreen.storyboard in Resources */,
-				E39F465B2876C62C001E84B4 /* FormViewController.xib in Resources */,
 				E39F464E2876C343001E84B4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E39F465E2876CB98001E84B4 /* SubscriberViewController.swift in Sources */,
-				E39F465A2876C62C001E84B4 /* FormViewController.swift in Sources */,
+				E39F46622876D55F001E84B4 /* Player.swift in Sources */,
 				E39F46452876C33D001E84B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

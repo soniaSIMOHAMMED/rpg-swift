@@ -27,14 +27,16 @@ class SubscriberViewController: UIViewController, UITextFieldDelegate {
 
     
      @IBAction func handleSubscribe(_ sender: Any) {
-         guard let nom = self.nomTextField.text,
-                let sexe = self.sexeTextField.text,
-                let taille = self.tailleTextField.text else {
-
+         
+          let nom = self.nomTextField.text
+          let sexe = self.sexeTextField.text
+          let taille = self.tailleTextField.text
+                    
+//         var player = Player(nom: nom, sexe: sexe, taille: taille, niveau: 1, xp: 0, vp: 100)
                 }
          
          
-     }
+     
     
 
 
